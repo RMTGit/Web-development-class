@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roletape promotion</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="stylesheet" href="styles/clientProject.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#dialog" ).dialog();
+            } );
+        </script>
+    </head>
+    <body>
+        <!--2nd jQuery widget and plugin-->
+        <div id="dialog" title="WELCOME!">
+            <p style="color: black;">This page is a promotional page for the small business called Roletape. Click around to learn!</p>
+        </div>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>What is Roletape?</h2>
+                <figure>
+                    <img class="gallery" src="images/Grad_Roletape_Images.jpg" alt="Graduation photos taken by Rahiem Thompson">
+                    <figcaption><em>North Carolina A&T graduation photos taken by Rahiem Thompson</em></figcaption>
+                </figure>
+                <p><a href="https://roletape.com/homepage">Roletape</a> is a photography and videography company founded and run by <a href="about.html">Rahiem Thompson</a>.
+                    Roletape does wedding videography and photography services, music video services, 
+                    graduation photography services, and much more!
+                </p>
+                <h3><a class="learnServices" href="services.html">Learn about our services!</a></h3>
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

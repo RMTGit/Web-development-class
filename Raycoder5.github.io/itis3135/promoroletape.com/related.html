@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Related sites</title>
+        <link rel="stylesheet" href="styles/clientProject.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#accordion" ).accordion();
+            } );
+        </script>
+    </head>
+    <body>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>Other services</h2>
+                <p class="center-text">Roletape also offers other services like <a href="https://launchpadlibrary.com/">Launchpad Libray</a> and <a href="https://pocketproducers.com/">Pocket Producers</a>.</p>
+                <p class="center-text">Click on the titles of the services below to get more info!</p>
+                <!--3rd jQuery widget and plugin-->
+                <div id="accordion">
+                    <h3>Launchpad Libray</h3>
+                    <div>
+                        <p>Launchpad Libray is a service that provides a library of E-books curated by Roletape.</p>
+                    </div>
+                    <h3>Pocket Producers</h3>
+                    <div>
+                        <p>Pocket Producers is a service creatives can use to meet other creatives in their area.</p>
+                    </div>
+                </div>
+                
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

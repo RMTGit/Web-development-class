@@ -1,0 +1,279 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (min-width: 576px) {
+  img {
+    display: block;
+  }
+}
+
+body {
+    background-image: url(https://i.kym-cdn.com/photos/images/original/001/169/088/c15.png);
+    padding: 20px;
+}
+
+body, figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Change the text color on the .tables class violet */
+
+.tables {
+  color: goldenrod;
+}
+
+/* Coloring for rows are below */
+
+table tr:nth-child(even) {
+  background-color: purple;
+  color: whitesmoke; 
+}
+
+table tr:nth-child(odd) {
+  background-color: goldenrod;
+  color: whitesmoke;
+}
+
+table tr:nth-child(1) {
+  background-color: rgb(104, 87, 0);
+  color: whitesmoke;
+}
+
+/* The black box around the main content, header, and footer. */
+
+.content-box {
+  background-color: black;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+/* (calculator_try) 1 The white box around the main calculator */
+.calculator-body {
+  background-color: azure;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* (calculator_try) The buttons background styling */
+.calculator-button {
+  background-color: purple;
+  margin: auto;
+}
+
+/* Contract page text styling */
+
+main p {
+  text-align: left;
+  color: goldenrod;
+}
+
+ul, figcaption, ol, label {
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Form formatting below */
+form {
+  display: block;
+  margin: 40px auto;
+  padding: 15px;
+  text-align: left;
+}
+
+/* Fieldset formatting below */
+
+fieldset {
+  border: none;
+  padding: 10px 0;
+}
+
+/* Intro page image styling */
+
+.gallery img {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Styling for the submit and reset button. */
+
+button[type="button"], input[type="submit"] {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 20px;
+  background: #171718;
+  color: goldenrod;
+}
+
+/* 4 stylings for the input elements */
+
+input {
+  font-size: medium;
+  text-align: center;
+  padding: 2px;
+  background: floralwhite;
+}
+
+/* Heading color and font type below */
+
+h1, h2, h3, p {
+    color: whitesmoke;
+    text-align: center;
+  }
+
+
+/* Image centered below */
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Link color controls below */
+
+a, nav {
+    text-align: center;
+    align-content: center;
+}
+
+a, a:visited {
+    color: violet;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #22c122;
+}
+  
+a:active {
+    color: blue;
+}
+
+/* (calculator_fcc) The flex box styling for the keys in the calculator */
+.calculator-keys {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: purple;
+  padding: 20px;
+}
+
+/* (calculator_fcc) The styling for the display in the calculator. */
+.calculator-display {
+  display: flex;
+  justify-content: right;
+  padding: 10px 15px;
+  background-color: goldenrod;
+}
+
+/* (calculator_fcc) The styling for the individual keys on the calculator. */
+.calculator-keys button {
+  padding: 15px;
+}
+
+/* review1.html and review2.html image styling */
+.reviewImage {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/* (arrays.html) Making the legend visible on my black background. */
+.fieldLegend {
+  color: goldenrod;
+}
+
+/* (slideshow.html) All the styling for this assignment is below. */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* (slideshow.html) All the styling for this assignment is above. */

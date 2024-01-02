@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="styles/clientProject.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+  </script>
+    </head>
+    <body>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>Gallery</h2>
+                <!--1st jQuery widget and plugin-->
+                <div id="tabs">
+                    <ul>
+                      <li><a href="#tabs-1">Photo sample 1</a></li>
+                      <li><a href="#tabs-2">Photo sample 2</a></li>
+                      <li><a href="#tabs-3">Photo sample 3</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <a href="https://roletape.com/portfolio-1"><img src="images/Gallery_1.jpg" style="width:100%" class="make-bigger"></a>
+                    </div>
+                    <div id="tabs-2">
+                        <a href="https://roletape.com/portfolio-1"><img src="images/Grad_Roletape_Images.jpg" style="width:100%" class="make-bigger"></a>
+                    </div>
+                    <div id="tabs-3">
+                        <a href="https://roletape.com/portfolio-1"><img src="images/Gallery_2.jpg" style="width:100%" class="make-bigger"></a>
+                    </div>
+                </div>
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/slideshow.js"></script>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

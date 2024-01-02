@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramone Thompson ★ ITIS 3135 ★ BYO Intro</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>BYO Intro</h2>
+                    <form id="userIntro" onsubmit="submitAndShow();">
+                        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                        <fieldset>
+                            <label for="name"> What is your name?
+                                <input type="text" id="name" value="Ramone Thompson" required>
+                            </label>
+                            <br>
+                            <label for="mascot"> What is your mascot?
+                                <input type="text" id="mascot" value="Roudy Tanuki" required>
+                            </label>
+                        </fieldset>
+                        <label for="userImage"> Intro image <em>(.jpg or .png only)</em>
+                            <input type="file" name="userImage" id="userImage" accept=".jpg, .png"></label>
+                        <fieldset>
+                            <label for="imageCaption"> Image caption
+                                <input type="text" id="imageCaption" required value="On a beach wearing a flower print outfit and some shades, Myrtle beach 2022">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="personalBackground"> Personal Background</label>
+                            <br>
+                            <textarea id="personalBackground" cols="30" rows="5" required>I was born in Kingston, Jamaica but I was mostly raised in the United States. I lived in the Bronx in New York city from kindergarten to 3rd grade and then I moved to Charlotte, North Carolina when I was in the 4th grade and I have lived here ever since. I really like Charlotte because it is a major city but does not feel overwhelming like New York city.</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="proBackground"> Professional Background</label>
+                            <br>
+                            <textarea id="proBackground" cols="30" rows="5" required>My very first job was a lifeguard job at a local pool in 2021. I quickly got promoted to lifeguard manager and finished out the summer in that position. I then got an internship the next summer in 2022 as an installation technician installing smart boards at local high schools in the Charlotte Mecklenburg area. Finally, I recently completed an internship with Fifth Third bank in Cincinnati, Ohio and I really enjoyed my time there. I will use that experience to try and get an internship in Charlotte next summer in 2024.</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="academicBackground"> Academic Background</label>
+                            <br>
+                            <textarea id="academicBackground" cols="30" rows="5" required>I went to a special high school called a middle college that allowed me to start college halfway through my high school career. So by the time I graduated from high school, I was already halfway through college. I then got accepted to UNC Charlotte and started attending in the fall semester of 2022.</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="classBackground"> Background in Web Development</label>
+                            <br>
+                            <textarea id="classBackground" cols="30" rows="5" required>I have taken 1 class in high school that was related to website design and development and I actually liked it! So ever since I have been wanting to dive back into the field to see what it would be like to do it more seriously and even professionally at some point in the future. I am really looking forward to learning more about HTML, CSS, and Javascript in this class!</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="primaryComputer"> What is your primary computer platform?</label>
+                            <br>
+                            <textarea id="primaryComputer" cols="30" rows="5" required>I primarily use MacOS on my M2 Macbook Pro but I also have this windows laptop that I use occasionally for gaming and I think I would like to start getting more familiar with windows and programming on a windows machine.</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label>What classes are your currently enrolled in?</label>
+                            <div id="newCourses"></div>
+                            <button type="button" onclick="newClass();">Add a class</button>
+                        </fieldset>
+                        <fieldset>
+                            <label for="funny"> What is something funny about you?</label>
+                            <br>
+                            <textarea id="funny" cols="30" rows="5" required>I ride a red Onewheel around campus very often so if you see me, dont be afraid to say hello! If you dont know what a Onewheel is, search it up on Google, there are like 8 people on campus that own one.</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="more"> Is there anything else you would like to share?</label>
+                            <br>
+                            <textarea id="more" cols="30" rows="5" required>I love Marvel movies and anime so if you are interested in either of those things, please reach out to me! I'd love to talk about all the theories I have about Marvel and some of the anime I watch.</textarea>
+                        </fieldset>
+                        <input type="checkbox" id="termsAndConditions" required>
+                        <label for="termsAndConditions">I understand that what is on this page is not password protected and I will not put anything here that I dont want publicly available.</label>
+                        <input type="submit" value="Submit">
+                        <button type="reset">Reset form</button>
+                    </form>
+                    <div id="userOutput">
+                        
+                    </div>
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/survey.js"></script>
+    </body>
+</html>

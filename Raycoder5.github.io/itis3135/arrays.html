@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramone Thompson ★ ITIS 3135 ★ Arrays</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>Activity #8 - Arrays</h2>
+                <fieldset>
+                    <legend class="fieldLegend">Name</legend>
+                    <input type="text" name="userName" id="userName" value="">
+                </fieldset>
+                <fieldset>
+                    <legend class="fieldLegend">Salary</legend>
+                    <input type="number" name="userSalary" id="userSalary" value="">
+                </fieldset>
+                <button onclick="addSalary();" name="addSalary">addSalary</button>
+                <button onclick="displayResults();" name="displayResults">displayResults</button>
+                <button onclick="displaySalary();" name="displaySalary">displaySalary</button>
+                
+                <!--Output div for displaySalary function.-->
+                <div class="displaySalary">
+
+                </div>
+                
+                <!--Output div for displayResults function.-->
+                <div class="results">
+
+                </div>
+                
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/arrays.js"></script>
+    </body>
+</html>

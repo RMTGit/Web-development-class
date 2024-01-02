@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramone's Hobby Page</title>
+        <style>
+            /* All of the colors for the web page. */
+            :root {
+                --site-color-1: #34403A;
+                --site-color-2: #285238;
+                --site-color-3: azure;
+                --site-color-4: #04E824;
+                --site-color-5: #18FF6D;
+            }
+            /* Style to get rid of the underline for links */
+            a:hover, a {
+                color: var(--site-color-2);
+                text-decoration: none;
+                text-align: center;
+            }
+            /* The color and alignment of the nav links and figcaption*/
+            nav a, figcaption, nav, a:visited{
+                color: var(--site-color-4);
+                text-align: center;
+            }
+            /* The background color of the page. */
+            body {
+                background-color: var(--site-color-1);
+            }
+            /* Center the footer validation links, the image captions, and the h1 elements.*/
+            footer, h1, h2 {
+                text-align: center;
+                color: var(--site-color-5);
+            }
+            /* Styling for the images in main. */
+            main img {
+                width: 100%;
+                height: 100%;
+                max-width: 600px;
+                max-height: 600px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* The styling for the p elements in main. */
+            main p {
+                color: var(--site-color-3);
+            }
+            /* The padding for the image captions */
+            figcaption {
+                padding-top: 10px;
+            }
+            main a, footer a {
+                color: var(--site-color-4);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Ramone's Hobby Page</h1>
+            <nav>
+                <a onclick="home();" href="#">Home ||</a>
+                <a onclick="aboutMe();" href="#">Me & my Onewheel ||</a>
+                <a onclick="whenStartedRiding();" href="#">When I started ||</a>
+                <a onclick="whereIveRidden();" href="#">Where i've ridden ||</a>
+                <a onclick="howToRide();" href="#">How to ride ||</a>
+                <a onclick="whyYouShould()" href="#">Why you need one</a>
+            </nav>
+        </header>
+        <main>
+            <!--The below section will change based on what nav link the user clicks.-->
+            <section id="content">
+                <h2>What is a Onewheel?</h2>
+                <figure>
+                    <img src="images/Onewheel_GT.jpg" alt="A person riding a Onewheel GT on the sand">
+                    <figcaption><em>A person riding a Onewheel GT on the sand</em> Credit: Onewheel.com</figcaption>
+                </figure>
+                <p><a href="https://onewheel.com/">Onewheel</a> is an U.S based company that sells 
+                    personal electric vehicles (PEVs).
+                    The Onewheel is an electric skateboard type vehicle that uses a rubber go-kart tire 
+                    instead of skateboard wheels. There is only one wheel on the board and that is where 
+                    it gets its name from. The tire is air filled like a normal car tire so this allows 
+                    riders to go through a lot more variations of terrain in comparison to a normal electric 
+                    skateboard. As of 2023, Onewheel has 4 models of Onewheels that they sell: the Onewheel 
+                    Pint, the Onewheel Pint x, the Onewheel GT, and the Onewheel GT-S.
+                </p>
+                <p>
+                    The difference between the models is range and speed. The Onewheel pint can go 16 mph with 
+                    a range of 6-8 miles and the Onewheel GT can go 20 mph with a range of 20-32 miles. 
+                    There is also the Onewheel GT-S model that can go 25 mph but has a lower range of 16-25 miles. All 4
+                    models of the board are assembled in California, USA. The founder and CEO Kyle Doerksen
+                    intentionally kept production of the Onewheel in the U.S because he believes in giving
+                    the people here at home a stable job instead of exporting the labor to China. With this
+                    in mind, the "Made in USA" stamp of approval does come with an increased price tag.
+                </p>
+                <p>
+                    Here are the price tags of each model as of 2023:
+                </p>
+                <p>
+                    <a href="https://onewheel.com/products/pint">Onewheel Pint: $1,050 USD</a>
+                </p>
+                <p>
+                    <a href="https://onewheel.com/products/onewheel-pint-x">Onewheel Pint x: $1,500 USD</a>
+                </p>
+                <p>
+                    <a href="https://onewheel.com/products/onewheel-gt">Onewheel GT: $2,300 USD</a>
+                </p>
+                <p>
+                    <a href="https://onewheel.com/pages/onewheel-gt-s-series">Onewheel GT-S: $3,200 USD</a>
+                </p>
+            </section>
+            
+            <!--I only need one section for this page because having multiple sections would add redundant code to my hobby.js file.-->
+        </main>
+        <footer>
+            <p>Designed by <a href="https://webpages.charlotte.edu/rthomp89/itis3135/TDEwebweird.com/index.html">Thompson Design Enterprises ©2023</a></p>
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+        
+                <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" 
+                alt="Valid HTML!">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        
+                    <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss" 
+                    alt="Valid CSS!">
+                
+                </a>
+            </p>
+        </footer>
+        <script src="scripts/hobby.js"></script>
+    </body>
+</html>

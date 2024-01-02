@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramone Thompson's Roudy Tanuki ★ ITIS 3135 ★ Tables</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main class="tables">
+                <h2>Activity #2 - HTML Tables</h2>
+                <h3>My Tabular Data</h3>
+                <ol>
+                    <li>Monkey D. Luffy kingofp1r@te2@gmail.com 21</li>
+                    <li>Roronoa Zoro wrongd1rection@gmail.com 22</li>
+                    <li>"Cat Burglar" Nami Iwantm0n3y@gmail.com 22</li>
+                    <li>Tony Tony Chopper Docraindeer@gmail.com 5</li>
+                    <li>"God" Usopp Sogeking@gmail.com 50</li>
+                    <li>Laboon D. Whale Ihatewa11s@gmail.com 30</li>
+                    <li>Brook D. Skeleton Iamdeadrn@gmail.com 50</li>
+                </ol>
+                <h3>Employee Data in Simple Table</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years</th>
+                    </tr>
+                    <tr>
+                        <td>Monkey D. Luffy</td>
+                        <td>kingofp1r@te2@gmail.com</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Roronoa Zoro</td>
+                        <td>wrongd1rection@gmail.com</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>"Cat Burglar" Nami</td>
+                        <td>Iwantm0n3y@gmail.com</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Tony Chopper</td>
+                        <td>Docraindeer@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>"God" Usopp</td>
+                        <td>Sogeking@gmail.com</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Laboon D. Whale</td>
+                        <td>Ihatewa11s@gmail.com</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Brook D. Skeleton</td>
+                        <td>Iamdeadrn@gmail.com</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+                <h3>Employee Data in Complex Table</h3>
+                <figure>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Years</th>
+                            <th>Salary</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Captains</td>
+                            <td>Monkey D. Luffy</td>
+                            <td>kingofp1r@te2@gmail.com</td>
+                            <td>21</td>
+                            <td>$3,000,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>Roronoa Zoro</td>
+                            <td>wrongd1rection@gmail.com</td>
+                            <td>22</td>
+                            <td>$1,111,000,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Crew</td>
+                            <td>"Cat Burglar" Nami</td>
+                            <td>Iwantm0n3y@gmail.com</td>
+                            <td>22</td>
+                            <td>$366,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>Tony Tony Chopper</td>
+                            <td>Docraindeer@gmail.com</td>
+                            <td>5</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td>"God" Usopp</td>
+                            <td>Sogeking@gmail.com</td>
+                            <td>50</td>
+                            <td>$500,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>Brook D. Skeleton</td>
+                            <td>Iamdeadrn@gmail.com</td>
+                            <td>50</td>
+                            <td>383,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>Pets</td>
+                            <td>Laboon D. Whale</td>
+                            <td>Ihatewa11s@gmail.com</td>
+                            <td>30</td>
+                            <td>$2,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total Years of Service</th>
+                            <td colspan="2">200</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">Total Salary</th>
+                            <td>$15,359,002,100</td>
+                        </tr>
+                    </table>
+                    <figcaption>Info for some of the Straw Hat crew</figcaption>
+                </figure>
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

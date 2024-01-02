@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramone Thompson's Roudy Tanuki ★ ITIS 3135 ★ Forms</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <div class="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>Activity #3 - HTML Form</h2>
+                <form method="post" action="#">
+                    <fieldset>
+                        <label for="first-last-name"> Enter your first and last name:
+                            <input placeholder="Enter name here..." id="first-last-name" name="first-last-name" type="text" required/></label>
+                            <br>
+                        <label for="phone-number"> Enter your phone number:
+                            <input placeholder="Enter number here..." id="phone-number" name="phone-number" type="text"/></label>
+                            <br>
+                        <label for="user-email"> Enter your email:
+                            <input placeholder="Enter email here..." id="user-email" name="user-email" type="email" required/></label>
+                    </fieldset>
+                    <fieldset>
+                        <label>How many episodes of One Piece have you watched?</label>
+                        <br>
+                        <input id="zero-range" name="zero-range" type="checkbox" required/>
+                        <label for="zero-range"> 0 episodes</label>
+                        <br>
+                        <input id="hundred-range" name="hundred-range" type="checkbox" required/>
+                        <label for="hundred-range"> 100 to 500 episodes</label>
+                        <br>
+                        <input id="hundred-thousand-range" name="hundred-thousand-range" type="checkbox" required/>
+                        <label for="hundred-thousand-range"> 500 to 1,000 episodes</label>
+                    </fieldset>
+                    <fieldset>
+                        <label>What pirate crew would you be on?</label>
+                        <br>
+                        <input id="big-mom" name="big-mom" type="radio" required/>
+                        <label for="big-mom"> The Big Mom pirates</label>
+                        <br>
+                        <input id="straw-hat" name="straw-hat" type="radio" required/>
+                        <label for="straw-hat"> The Straw Hat pirates</label>
+                        <br>
+                        <input id="corazon" name="corazon" type="radio" required/>
+                        <label for="corazon"> The Corazon pirates</label>
+                        <br>
+                        <label> Who is your favorite member of the Straw Hat pirates?</label>
+                        <br>
+                        <select size="4" required>
+                            <option value="">Select a crew member...</option>
+                            <option value="Luffy">Luffy</option>
+                            <option value="Zoro">Zoro</option>
+                            <option value="Sanji">Sanji</option>
+                            <option value="Usopp">Usopp</option>
+                            <option value="Jinbe">Jinbe</option>
+                            <option value="Nami">Nami</option>
+                            <option value="Robin">Robin</option>
+                            <option value="Chopper">Chopper</option>
+                            <option value="Franky">Franky</option>
+                            <option value="Brook">Brook</option>
+                        </select>
+                    </fieldset>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </form>
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

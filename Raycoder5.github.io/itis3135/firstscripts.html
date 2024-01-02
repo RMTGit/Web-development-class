@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramone Thompson's Roudy Tanuki ★ ITIS 3135 ★ First JavaScripts</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/defaultscripts.js"></script>
+    </head>
+    <body onmousemove="getTheDate();">
+        <div class="content-box" id="content-box">
+            <div data-include="components/header.html"></div>
+            <main>
+                <h2>First JavaScripts</h2>
+                <h3 id="returnDate"></h3>
+                <form method="post" action="#">
+                    <fieldset>
+                        <label for="name"> What is your name?
+                            <input type="text" id="name" value="Ramone" required></label>
+                        <br>
+                        <label for="how-you-are-doing"> How are you feeling?
+                            <input type="text" name="how-you-are-doing" id="how-you-are-doing" value="good" required></label>
+                    </fieldset>
+                    <button type="button" onclick="greeting();">Submit</button>
+                    <h3 id="returnGreeting"></h3>
+                </form>
+                <form method="post" action="#">
+                    <fieldset>
+                        <label for="favorite-number"> What is your favorite number on a scale of 1 to 10?
+                            <input type="number" name="favorite-number" id="favorite-number" min="1" max="10"></label>
+                    </fieldset>
+                    <button type="button" onclick="getShape();">Submit</button>
+                </form>
+                <button type="button" name="tanuki-table-flip" onclick="tanukiTableFlip();">Tanuki table flip</button>
+                <button type="button" name="tanuki-joke" onclick="tanukiJoke();">Tanuki joke</button>
+                <button type="button" name="tanuki-insult" onclick="tanukiInsult();">Tanuki insult</button>
+                <button type="button" name="color-change" onclick="tanukiColorChange();">Tanuki color change</button>
+                <button type="button" name="color-revert" onclick="tanukiColorRevert();">Tanuki color revert</button>
+            </main>
+            <div data-include="components/footer.html"></div>
+        </div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

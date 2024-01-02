@@ -1,0 +1,118 @@
+/* All of the website colors */
+:root {
+    --company-color-1: black;
+    --company-color-2: #484848;
+    --company-color-3: #E7ECEF;
+    --company-color-4: #6096BA;
+    --company-color-5: #A3CEF1;
+}
+
+/* Below is the styling for the black box that is around the main content. */
+.content-box {
+    background-color: var(--company-color-1);
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+/* Below is the styling for the h1, h2, and p elements. */
+h1, p {
+    color: var(--company-color-3);
+    font-family: Georgia;
+}
+
+h2, h3 {
+    color: var(--company-color-4);
+    font-family: Georgia;
+}
+
+/* Below is the styling for the captions under images. */
+figcaption {
+    color: var(--company-color-3);
+    font-family: Georgia;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Below is the font styling specific to the h1 element. */
+h1 {
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Below is the nav bar styling */
+a, nav {
+    text-align: center;
+    align-content: center;
+}
+
+/* Below is the styling that gets rid of the underline under links. */
+a, a:visited {
+    color: var(--company-color-5);
+    text-decoration: none;
+}
+
+/* Below is the styling that changes the color of the links when you hover over the link. */
+a:hover {
+    color: var(--company-color-2);
+}
+
+/* Below is the styling for the background of the page. */
+body {
+    background-color: var(--company-color-4);
+    padding: 20px;
+}
+
+/* Below is the styling for the footer links */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Below is the styling for the images in the main */
+main img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Below is the styling for the main heading 2. */
+main h2 {
+    text-align: center;
+}
+
+/* Below is the styling for the image on the index page. */
+.gallery {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+/* Below is the styling for the link at the bottom of the index page and the styling for the contact page*/
+.learnServices, .contact {
+    display: block;
+    text-align: center;
+}
+
+/* Making the pictures smaller on the services page. */
+.make-smaller {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Making the pictures bigger on the gallery page. */
+.make-bigger {
+    max-width: 900px;
+    max-width: 900px;
+}
+
+/* Centers the text of any paragraph with this class */
+.center-text {
+    text-align: center;
+}
